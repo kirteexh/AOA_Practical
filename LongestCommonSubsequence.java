@@ -18,14 +18,6 @@ public class LongestCommonSubsequence {
             }
         }
 
-        System.out.println("DP Table:");
-        for (int i = 0; i <= m; i++) {
-            for (int j = 0; j <= n; j++) {
-                System.out.printf("%3d", L[i][j]);
-            }
-            System.out.println();
-        }
-
         StringBuilder sb = new StringBuilder();
         int i = m, j = n;
         while (i > 0 && j > 0) {
