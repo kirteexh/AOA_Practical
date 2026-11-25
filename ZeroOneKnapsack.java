@@ -18,14 +18,6 @@ public class ZeroOneKnapsack {
             }
         }
 
-        System.out.println("DP Table:");
-        for (int i = 0; i <= n; i++) {
-            for (int w = 0; w <= W; w++) {
-                System.out.printf("%4d", dp[i][w]);
-            }
-            System.out.println();
-        }
-
         System.out.println("Maximum Profit = " + dp[n][W]);
 
         int w = W;
